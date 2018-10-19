@@ -11,11 +11,11 @@ namespace Acme.Array.Solver.Tests
         {
             private List<int> numbersList = new List<int>();
 
-            private Solver.NumberArraySolver solver = new Solver.NumberArraySolver();
+            private Solver.NumberArraySolver solver;
             [TestInitialize]
             public void Setup()
             {
-                NumberArraySolver solver = new NumberArraySolver();
+                solver = new NumberArraySolver();
                 numbersList = new List<int> { 1, 2, 4, 5, 6, 7, 8, 9, 10 };
             }
 
