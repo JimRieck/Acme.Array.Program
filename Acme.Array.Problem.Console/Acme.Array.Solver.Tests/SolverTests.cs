@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -36,7 +37,7 @@ namespace Acme.Array.Solver.Tests
             public void TestNoItemsInListNumberList()
             {
                 numbersList = new List<int>();
-                Assert.ThrowsException<ArgumentNullException>(() => solver.SolveNumberArray(numbersList).Any());
+                Assert.ThrowsException<InvalidDataException>(() => solver.SolveNumberArray(numbersList).Any());
             }
 
         [TestMethod]

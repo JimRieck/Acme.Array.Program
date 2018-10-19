@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Dynamic;
+using System.IO;
 using System.Linq;
 using System.Runtime.Remoting.Channels;
 
@@ -17,7 +18,7 @@ namespace Acme.Array.Solver
             }
             else if (!numberList.Any())
             {
-                throw new ArgumentNullException("numberList has no items");
+                throw new InvalidDataException("numberList has no items");
             }
             else
             {
